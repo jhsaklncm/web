@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Page</title>
+    <style>
+               body {
+                    background-image: url('beijing.png');
+                    background-size: cover;
+                    font-family: Arial, sans-serif;
+                    margin: 0;
+                    padding: 0;
+                }
+                .container {
+                    max-width: 1200px;
+                    margin: 20px auto;
+                    padding: 20px;
+                    background-color: rgba(255, 255, 255, 0.5);
+                    border-radius: 10px;
+                    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                    display: flex;
+                    flex-direction: row;
+                    align-items: flex-start;
+                }
+                .back-button {
+                    position: absolute;
+                    top: 20px;
+                    left: 20px;
+                    width: 30px;
+                    height: 30px;
+                    background-image: url('back.svg');
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    cursor: pointer;
+                }
+                .pie-chart {
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    align-items: flex-start;
+                }
+                .pie-chart-item {
+                    width: 100%;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: center;
+                    margin-bottom: 20px;
+                }
+                .pie-chart-item img {
+                    width: 30%;
+                    margin-right: 10px;
+                }
+                .pie-chart-item input {
+                    padding: 10px;
+                    border: 1px solid #ccc;
+                    border-radius: 5px;
+                    box-sizing: border-box;
+                    outline: none;
+                    width: 30%;
+                }
+    </style>
+</head>
+<body>
+	<a href="b.html" class="back-button"></a>
+    <div class="container">
+        <div class="pie-chart">
+            <div class="pie-chart-item">
+                <img src="avg_pie_pie1.png" alt="UPL Pie Chart" style="width:50%;">
+				
+                <span>有11.1%的学生成绩在90分以上，
+				有42.2%的学生成绩在75-90分之间，
+				30%的人成绩在60分以下。</span>
+            </div>
+            <div class="pie-chart-item">
+                <img src="avg_skew_avgscore.png" alt="A Chart" style="width: 40%;">
+                <img src="avg_skew_time.png" alt="B Chart" style="width: 40%;">
+				
+                <span>课程的观看时长呈现右偏态分布，
+				学生考试成绩呈现左偏态分布。</span>
+            </div>
+			<div class="pie-chart-item">
+			    <img src="avg_boxplot_score.png" alt="C Chart" style="width: 40%;">
+			    <img src="avg_boxplot_time.png" alt="D Chart" style="width: 40%;">
+				
+			    <span>一般课程学生观看时长的中位数为3-4h，
+				分布特别集中在2-5h；
+				考试成绩的中位数在78分附近，
+				分布相对集中在60-80之间。</span>
+			</div>
+			<div class="pie-chart-item">
+			    <img src="avg_pie_pie.png" alt="C Chart" style="width: 50%;">
+			    
+			    <span>大多数学生的观看时长在10h以内，
+				分数分布集中在60分和80分附近。
+				皮尔逊相关系数：0.257，
+				P-value: 0.0774，
+				显著性检验结果: 结论：时间和分数之间没有显著的相关性。</span>
+			</div>
+			<div>
+				<p></p>
+				<p></p>
+				<p></p>
+				<p></p>
+				<p></p>
+				<p>结论：</p>
+				<span>一般课程的学生在课程的时间投入相对集中，大部分学生的成绩处于中上水平。虽然观察到观看时长与成绩之间轻微的正相关关系，但这种关系统计上不显著，暗示成绩的好坏不仅仅由观看时长决定。建议教育者深入分析可能影响学生表现的其他因素，并针对性地提供教学支持和资源，以帮助低分段学生提升成绩，同时维持或提高整体学生的学习效果。进一步的研究可考虑探讨提高学习效率和课程吸引力的方法，从而可能在不增加学生负担的前提下提升学生成绩。</span></div>
+        <p>建议：</p>
+        				<p>全面因素分析：除了观看时间外，分析其他可能影响学生成绩的因素，如学习背景、课程内容接受度等。</p>
+        <p>资源和支持：为成绩较低的学生群体提供额外的学习资源和辅导，帮助他们克服学习难题，提升成绩。</p>
+        <p>提升课程吸引力：通过增加课程的互动性和参与度来提高学生的学习兴趣和动力，例如通过讨论板、实时问答和群体任务。</p>
+        
+		</div>
+    </div>
+</body>
+</html>

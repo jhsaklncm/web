@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Page</title>
+    <style>
+        body {
+            background-image: url('beijing.png');
+            background-size: cover;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 1200px; /* Increase the container width further */
+            margin: 20px auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.5);
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .search-container {
+            width: 100%;
+            margin-bottom: 20px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding: 10px;
+            background-color: rgba(255, 255, 255, 0.5);
+            border-radius: 5px;
+        }
+        .search-box {
+            flex: 1;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+            margin-right: 10px;
+            box-sizing: border-box;
+            outline: none;
+        }
+        .search-icon {
+            width: 24px;
+            height: 24px;
+            cursor: pointer;
+        }
+        .pie-chart {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .index {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 30%;
+        }
+        .index input {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+            outline: none;
+        }
+        .index a {
+            padding: 10px;
+            border-radius: 5px;
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
+            margin-bottom: 10px;
+            width: 100px;
+            text-align: center;
+        }
+        .index a:hover {
+            background-color: #0056b3;
+        }
+        .pie-chart img {
+            opacity: 0.7;
+        }
+		.title {
+		            text-align: center;
+		            margin-top: 20px;
+		            font-size: 32px;
+		            font-weight: bold;
+		        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="search-container">
+			 <div class="title">
+            <span>基于Python实现的在线教育学习时长与成绩之间的关系分析</span>
+			</div>
+            <img src="search_icon.png" alt="Search Icon" class="search-icon" />
+        </div>
+        <div class="pie-chart">
+            <div class="index">
+                <img src="upl_pie_pie1.png" alt="UPL Pie Chart" style="width: 100%;">
+                <a href="u.html">unpopular</a>
+            </div>
+            <div class="index">
+                <img src="avg_pie_pie1.png" alt="AVG Pie Chart" style="width: 100%;">
+                <a href="a.html">average</a>
+            </div>
+            <div class="index">
+                <img src="pl_pie_pie1.png" alt="PL Pie Chart" style="width: 100%;">
+                <a href="p.html">popular</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

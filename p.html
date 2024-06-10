@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Page</title>
+    <style>
+               body {
+                    background-image: url('beijing.png');
+                    background-size: cover;
+                    font-family: Arial, sans-serif;
+                    margin: 0;
+                    padding: 0;
+                }
+                .container {
+                    max-width: 1200px;
+                    margin: 20px auto;
+                    padding: 20px;
+                    background-color: rgba(255, 255, 255, 0.5);
+                    border-radius: 10px;
+                    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                    display: flex;
+                    flex-direction: row;
+                    align-items: flex-start;
+                }
+                .back-button {
+                    position: absolute;
+                    top: 20px;
+                    left: 20px;
+                    width: 30px;
+                    height: 30px;
+                    background-image: url('back.svg');
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    cursor: pointer;
+                }
+                .pie-chart {
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    align-items: flex-start;
+                }
+                .pie-chart-item {
+                    width: 100%;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: center;
+                    margin-bottom: 20px;
+                }
+                .pie-chart-item img {
+                    width: 30%;
+                    margin-right: 10px;
+                }
+                .pie-chart-item input {
+                    padding: 10px;
+                    border: 1px solid #ccc;
+                    border-radius: 5px;
+                    box-sizing: border-box;
+                    outline: none;
+                    width: 30%;
+                }
+    </style>
+</head>
+<body>
+	<a href="b.html" class="back-button"></a>
+    <div class="container">
+        <div class="pie-chart">
+            <div class="pie-chart-item">
+                <img src="pl_pie_pie1.png" alt="UPL Pie Chart" style="width:50%;">
+				
+                <span>在60以下的同学占比为7.3%，
+				大多数人（70.7%）的成绩分布在60-90之间，
+				90分以上的同学占比为22%。</span>
+            </div>
+            <div class="pie-chart-item">
+                <img src="pl_skew_avgscore.png" alt="A Chart" style="width: 40%;">
+                <img src="pl_skew_time.png" alt="B Chart" style="width: 40%;">
+				
+                <span>观看时间分布相对均匀，呈现右偏态分布。
+				分数分布相对集中在65和85分附近。</span>
+            </div>
+			<div class="pie-chart-item">
+			    <img src="pl_boxplot_score.png" alt="C Chart" style="width: 40%;">
+			    <img src="pl_boxplot_time.png" alt="D Chart" style="width: 40%;">
+				
+			    <span>受欢迎的课程观看时长中位数为5.5h,
+				观看时长相对集中在2.5-9.5h之间；
+				考试成绩分布相对均匀，中位数为78分，
+				大多数分布在65-87附近。</span>
+			</div>
+			<div class="pie-chart-item">
+			    <img src="pl_pie_pie.png" alt="C Chart" style="width: 50%;">
+			    
+			    <span>根据图中信息，观看时长在10h以下的学生人数较多，考试成绩分布相对均匀。
+				皮尔逊相关系数：0.296，
+				P-value: 0.0431，
+				显著性检验结果: 结论：时间和分数之间存在显著相关性。</span>
+			</div>
+			<div>
+				<p></p>
+				<p></p>
+				<p></p>
+				<p></p>
+				<p></p>
+				<p>结论：</p>
+				<span>这门受欢迎的课程显示出良好的学习投入和成绩表现。学生的观看时间与成绩之间的显著正相关性表明，意味着学生在这门课程上投入的时间越多，通常能够获得更好的成绩。鉴于成绩的分布相对均匀，这门课程似乎适合大多数学生，并且能够激励一定比例的学生达到高分。建议教育者继续维持或优化这种课程结构，同时鼓励学生增加学习时间以提高成绩，特别是那些希望达到更高分数段的学生。此外，可以进一步研究影响学生学习效率和成绩的其他因素，以便更精确地指导学生和改进教学方法。</span></div>
+				<p>建议：</p>
+				<p>持续优化课程结构：保持和优化课程内容的质量和组织，确保其继续吸引和满足大多数学生的需要。</p>
+<p>鼓励学习时间增加：鉴于观看时间与成绩的正相关性，鼓励学生投入更多时间进行学习，可能通过设立学习目标、时间管理工具和激励机制。</p>
+<p>深入研究学习效率：进一步分析和研究提高学习效率的方法，以便在不增加学生负担的情况下提高成绩。</p>
+
+		</div>
+    </div>
+</body>
+</html>

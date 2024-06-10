@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Page</title>
+    <style>
+               body {
+                    background-image: url('beijing.png');
+                    background-size: cover;
+                    font-family: Arial, sans-serif;
+                    margin: 0;
+                    padding: 0;
+                }
+                .container {
+                    max-width: 1200px;
+                    margin: 20px auto;
+                    padding: 20px;
+                    background-color: rgba(255, 255, 255, 0.5);
+                    border-radius: 10px;
+                    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                    display: flex;
+                    flex-direction: row;
+                    align-items: flex-start;
+                }
+                .back-button {
+                    position: absolute;
+                    top: 20px;
+                    left: 20px;
+                    width: 30px;
+                    height: 30px;
+                    background-image: url('back.svg');
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    cursor: pointer;
+                }
+                .pie-chart {
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    align-items: flex-start;
+                }
+                .pie-chart-item {
+                    width: 100%;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: center;
+                    margin-bottom: 20px;
+                }
+                .pie-chart-item img {
+                    width: 30%;
+                    margin-right: 10px;
+                }
+                .pie-chart-item input {
+                    padding: 10px;
+                    border: 1px solid #ccc;
+                    border-radius: 5px;
+                    box-sizing: border-box;
+                    outline: none;
+                    width: 30%;
+                }
+    </style>
+</head>
+<body>
+	<a href="b.html" class="back-button"></a>
+    <div class="container">
+        <div class="pie-chart">
+            <div class="pie-chart-item">
+                <img src="upl_pie_pie1.png" alt="UPL Pie Chart" style="width:50%;">
+				
+                <span>小众课堂有64.6%的人在75分以上，
+				14.6%的人在60-75分之间，20.8%的人在60分以下。</span>
+            </div>
+            <div class="pie-chart-item">
+                <img src="upl_skew_avgscore.png" alt="A Chart" style="width: 40%;">
+                <img src="upl_skew_time.png" alt="B Chart" style="width: 40%;">
+				
+                <span>小众课堂的观看时间分布形成右偏态分布，
+				而考试成绩却呈现左偏态分布。</span>
+            </div>
+			<div class="pie-chart-item">
+			    <img src="upl_boxplot_score.png" alt="C Chart" style="width: 40%;">
+			    <img src="upl_boxplot_time.png" alt="D Chart" style="width: 40%;">
+				
+			    <span>小众课程学生观看时间的中位数为2-3h，
+				观看时间分布相对集中在5h以下；
+				小众课程的考试成绩的中位数为80，
+				分布集中在65-90分。</span>
+			</div>
+			<div class="pie-chart-item">
+			    <img src="upl_pie_pie.png" alt="C Chart" style="width: 50%;">
+			    
+			    <span>大部分的学生观看时长集中在10h以下，
+				而成绩分布集中在75-100分之间，并不成正比，
+				说明小众课堂成绩的分布不太符合客观规律。	
+				皮尔逊相关系数：-0.006，
+				P-value:0.9545，
+				显著性检验结果: 结论：时间和分数之间没有显著的相关性。</span>
+			</div>
+			<div>
+				<p></p>
+				<p></p>
+				<p></p>
+				<p></p>
+				<p></p>
+				<p>结论：</p>
+				<span>小众课程虽然学生的观看时间不长，但大多数学生能够在考试中获得较好的成绩。成绩与观看时长之间的低相关性表明，成功的学习结果可能与学生的学习策略、课程内容的质量、教学方法等因素更为相关。建议教育提供者和课程设计者进一步探索提升学生学习效率的方法，同时也为学生提供更多支持和资源，以帮助他们在较短的学习时间内实现良好的学习成果。
+针对右偏的观看时间分布，可考虑针对那些观看时间较长的学生进行特别关注，了解他们是否存在学习效率低下的问题，或是否因课程难度感到挑战，从而提供更有针对性的支持。同时，对于成绩分布左偏的情况，可以探索提高整体课程难度或调整评分标准，以更好地挑战和激励表现优异的学生。
+</span>
+        <p>建议：</p>
+        				<p>提高学习效率：发展和实施更有效的教学策略，例如通过交互式学习、案例研究和实践项目来增强学习体验。</p>
+        <p>定向支持：针对观看时间较长的学生，提供个性化的辅导和资源，帮助他们提高学习效率，解决可能的学习障碍。</p>
+        <p>调整课程难度：根据成绩分布情况，适当调整课程难度和评分标准，确保课程能够足够挑战优秀学生，同时不至于过分困难导致其他学生跟不上。</p>
+        
+</div>
+        </div>
+    </div>
+</body>
+</html>
